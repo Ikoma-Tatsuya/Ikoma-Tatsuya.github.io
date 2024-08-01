@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="8月月初会議でのプレゼン内容">
+    <title>8月プレゼン大会</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.2;
+            color: #3c3a3a;
+            margin: 0;
+            padding: 0;
+            background-color: #f4fcff; 
+        }
+        .fixed-header {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 100%;
+            color: #7c7676;
+            margin-top: 0;
+            padding: 10px;
+        }
+        .fixed-footer {
+            text-align: right;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 100%;
+            color: #7c7676;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .content-wrapper {
+            width: 100%;
+            padding: 0 2%;
+            box-sizing: border-box;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .top-div {
+            margin-top: 80px;
+        }
+        .left-h4 {
+            text-align: left;
+            display: block;
+            margin: 10px 0;
+            margin-top: 10px;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+        .priority-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            table-layout: fixed;
+        }
+        .priority-table th, .priority-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            width: 33.33%; /* 各列の幅を均等に設定 */
+        }
+        .priority-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .priority-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        h1 {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            text-align: left;
+            height: auto;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .book-section {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .photo-text-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .photo-text-container img {
+            flex: 0 0 auto;
+            max-width: 50%;
+            height: auto;
+        }
+        .photo-text-container p {
+            flex: 1;
+            margin: 0;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            .content-wrapper {
+                padding: 0 2%;
+            }
+            h4 {
+                font-size: 1.5em;
+                padding: 5px 0;
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.14.0/mermaid.min.js"></script>
+</head>
+<body>
+    <div class="fixed-header">
+        <strong>IKOMA TATSUYA</strong>
+    </div>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="center-text reveal">
+                <h1>2024年8月2日1Qプレゼン大会</h1>
+                <strong>11期目標：設計力をすべての要とする。</strong>
+            </div>
+        </div>
+    </div>
+    <img src="howtodesign.jpg" style="width: 100vw; height: 200px; object-fit: cover; object-position: center; max-width: 100vw; margin-left: calc(-50vw + 50%); margin-top: 50PX; position: relative; left: 50%; right: 50%; transform: translateX(-50%);" alt="">
+    <div class="container">
+        <div class="top-h4 content-wrapper">
+            <p>
+                <strong>改めて、設計力とは何か？</strong>
+            </p>
+            <p>
+                事業設計・組織設計・システム設計etc...、さまざまな設計があります。<br>
+                私は、これらに共通する<strong style="color: cadetblue;">【物事を実行可能な単位まで落とし込むこと】</strong>
+                こそが設計だと考えています。そして、いかにこの解像度を上げることができるか、これが設計力だと思っています。
+            </p>
+            <div class="top-div reveal">
+                <h4 class="left-h4">１Qの学び・成長</h4>
+                <h2 class="center-text">
+                    できる領域の拡大と、自身の成長課題の明確化
+                </h2>
+            </div>
+            <p>D&I様で、一つのプロジェクトをキックオフから携わったことで、プロジェクトの進行・クライアントとのやりとり方法などを実体験を持って理解することができました。これにより、業務の大部分が自走できるようになりつつあります。</br>
+            また、自分自身の判断軸をどう持つか、そしてそれを周囲にどう伝播させるか、これが次の自身の成長課題だと思っています。
+            </p>
+            <div class="top-div">
+                <h4 class="left-h4">１Qうまくいかなかったこと、反省点</h4>
+            </div>
+            <div class="photo-text-container section reveal">
+                <img src="Comfort-zone.png" alt="">
+                <div>
+                    <h2>
+                        コンフォートゾーンからの</br>
+                        未脱却
+                    </h2>
+                    <p>
+                    自分ができる範囲の業務に留まっていると、行き詰まりが発生します。</br>
+                    普遍的な考え方-仕事の進め方のセオリーや、SaaSの使い方をパターン的に理解しておくことで打開策が見えてきます。</p>                </div>
+                </div>
+            </div>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">１Qチームに貢献したこと</h4>
+                <h2 class="center-text">鈴木さんへのナレッジ移管</h2>
+                <p>まだはじめたばかりではありますが、スクレイピングなどコードの管理に着手。</br>
+                    これにより、提供で汎用的に使い回すことができるようになってきています。</p>
+            </div>
+            <img src="python.png">
+            <div class="top-div section reveal">
+                <h4 class="left-h4">１Q時間の価値を最大限に活用したこと</h4>
+                <h2 class="center-text">鈴木さんへの作業移管</h2>
+                KOREC様を中心として、鈴木さんが自走に近づいていることで、自身の集中するべき領域に集中できているように思います。
+                これは、もちろん鈴木さんの努力の賜物だと思いますが、その一助として、しっかりと時間を確保してナレッジをレクチャーできたことが大きいと考えています。
+            </div>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">業務におけるチャンス</h4>
+                <h2 class="center-text">顧客へのダイレクトな価値提供</H2>
+                <P>自身が実装したものが顧客への価値提供となります。ある程度提供の形も見えて生きた中で、どのように価値をアップデートし提供するかが重要です。</P>
+            </div>    
+            <div class="top-div section reveal">
+                <h4 class="left-h4">業務におけるリスク</h4>
+                <h2 class="center-text">プロダクトの品質担保と、提供スピードの両立</h2>
+                <p>これから、提供に求められるスピードがどんどん速くなっていくと考えられます。</br>
+                    スピードを優先すれば質が下がり、質を優先すればスピードが下がってしまいます。いかにこのバランスを取ることができるかが、勝負の分かれ目だと思います</p>
+            </div>
+            <div class="photo-text-container" style="margin-top: 50px;">
+                <img src="check_point.jpeg" alt="チェックポイント">
+                <div>
+                    <h4>読了本</h4>
+                    <h2>要求定義のチェックポイント</h2>
+                    <p>本当に顧客のことを考えるのであれば、顧客の要求を全て呑むことはあってはならない。真に必要な要求を見定め、取捨選択をおこなうことが開発を請け負う側の仕事である。</p>
+                </div>
+            </div>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">目標とキャリアビジョン</h4>
+                <p>まずは、プロジェクトの一連の進み方について、理解を深める。また、エンジニアとしてのキャリアを目指すためにフロント（ユーザーに見える）側の知見を増やしていく。</p>
+            </div>
+            <div class="mermaid">
+                gantt
+                title エンジニアキャリアロードマップ
+                dateFormat  YYYY
+                axisFormat %Y
+                
+                section 技術スキル
+                フロントエンド強化     :2024, 2y
+                バックエンド学習       :2024, 3y
+                AI/機械学習入門        :2025, 2y
+                セキュリティ基礎       :2026, 2y
+                数理統計/データサイエンス :2027, 3y
+                
+                section ソフトスキル
+                プロジェクト管理入門   :2024, 1y
+                コミュニケーション強化 :2024, 2y
+                要件定義・顧客折衝     :2025, 2y
+                チームリーダー経験     :2027, 2y
+                
+                section キャリアステップ
+                ジュニアエンジニア     :2024, 2y
+                ミドルエンジニア       :2026, 3y
+                シニアエンジニア       :2029, 2y
+            </div>
+            <div class="top-div reveal">
+                <h4 class="left-h4">
+                    ２Q自分は何によって、チームに貢献すべきか？
+                </h4>
+                <h2 class="center-text">MENDANアップデート</h2>
+            </div>
+            <p>MENDANというプロダクトを、お客様に納得してもらえるレベル感まで仕上げること。<br>
+            そして誰であっても提供できる型化をすることが、2Qにおける自身のMissionです。</p>
+            
+            <div class="top-div section reveal">
+                <h4 class="left-h4">
+                    ２Q目標KGI
+                </h4>
+                <h2 class="center-text">個人粗利100万</h2>
+                <p>販管費90万円が今クオーターの目標になります。</br>
+                   これをどのように上回っていくかは戦略として考える必要があります。</p>
+            </div>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">
+                    ２Qスマートゴール
+                </h4>
+                <h2 class="center-text">
+                    単独で回すことができる案件の創出
+                </h2>
+                <p>
+                    もちろんプロジェクトとしては複数人が参画しますが、実稼働は一人、という状態に持っていかないと現状の提供リソースではこの達成は難しいと考えています。
+                    理想として、このクオーターで営業側でも提供できるという状況に持っていきたいと考えています。
+                </p>
+            </div>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">
+                    ２Qチャレンジ目標
+                </h4>
+                <h2 class="center-text">
+                    上流・下流工程の経験・そしてプロジェクト全体の俯瞰
+                </h2>
+                <p>＜居抜きオフィス案件＞</br>
+                    2年目で上流工程に携わらせていただけるチャンスはまずないと思うので、この案件を通してプロジェクトへの理解をさらに深められればと考えています。</p>
+            </div>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">2Q優先実施事項</h4>
+            </div>
+            <table class="priority-table">
+                <tr>
+                    <th>優先度1</th>
+                    <th>優先度2</th>
+                    <th>優先度3</th>
+                </tr>
+                <tr>
+                    <td>営業デモ内容の整理</td>
+                    <td>MENDANのアップデートと提供効率化</td>
+                    <td>WEBサイト構築を通じたバックエンド理解</td>
+                </tr>
+            </table>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">ZEN office Core Valueを体現したPR</h4>
+                <h2 class="center-text">
+                    最後までやりきる力
+                </h2>
+                <p>これはひとえに若山さんのおかげですが、着実に業務をこなす力が身に付いてきたと感じます。</p>
+            </div>
+            <div class="top-div section reveal">
+                <h4 class="left-h4">会社をよりよくするアイデア</h4>
+                <h2 class="center-text">プロジェクト成功の鍵！事前検証期間の導入</h2>
+                <p><strong>課題感：</strong>固定費用でのプロジェクト遂行において、無制限の稼働はチーム全体の疲弊・従業員満足度の低下を招き、長期的な品質低下・コスト増大を招きます。</p>
+                <h3>提案：事前検証フェーズの導入</h3>
+                <ul>
+                    <li><strong>目的：</strong>営業の顧客理解を提供側で享受し、リスクを最小化しながらプロジェクトの成功確率を高める。</li></br>
+                    <li><strong>内容：</strong>
+                        <ol>
+                            <li>営業側の顧客理解共有</li></br>
+                            <li>実現可能性の検証</li></br>
+                            <li>最大稼働時間・プロジェクトゴールの明確な線引き</li></br>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>期待効果：</h3>
+
+                <ol>
+                    <div class="photo-text-container">
+                        <li><strong>プロジェクトの成功率向上：</strong></br>
+                            事前に潜在的な問題を特定し、対策を講じることで、予期せぬ障害を減少。</li></br>
+                        <img src="Pitfall.jpeg" alt="">
+                    </div>
+                    <div class="photo-text-container">
+                        <img src="cost.jpg" style="width: 262px; height: 192px; object-fit: cover; object-position: center;" alt="">
+                        <li><strong>稼働コストの改善：</strong></br>事前に最大稼働時間を見積もることで、顧客数増加にも対応できる。</li></br>
+                    </div>
+                    <div class="photo-text-container">
+                        <li><strong>従業員・顧客の満足度向上：</strong></br>期待値の適切な設定により無理のない作業量を設定可能。また、明確な目標設定で従業員のストレスを軽減。
+                        期待値がわかっていれば、そのラインを越えられれば顧客満足度達成と捉えることができる。</li></br>
+                        <img src="customer_success.jpeg" style="width: 262px; height: 192px; object-fit: cover; object-position: center;" alt="">
+                    </div>
+                </ol>
+                
+                <h3>実施方法：</h3>
+                
+                <ol>
+                    <li>事前のリスク見積もり：実装できないことがわかった場合の代替案を用意する</li></br>
+                    <li>稼働ライン：他の顧客獲得見込みを含めて、どこまでのことを実施するのかを事前に設定する。</li></br>
+                    <li>顧客への事前確認：顧客期待値を事実ベースで把握することで、共通の期待値ラインを持つ</li></br>
+                </ol>
+                
+                <p>事前に検証期間を導入することは、短期的には追加の時間と労力を要し、一見現在のアジャイルにマッチしないようにみえます。しかし、長期的にはプロジェクトの成功確率を大きく高め、顧客満足度の向上とチームの生産性に貢献します。</p>
+            </div>
+            <div class="top-div">
+                <h4 class="left-h4">AI活用</h4>
+                <img src="Claude.png"></br>
+                <p>こちらのプレゼン資料は、Claude3.5の力を借りつつ、1から自分で作成をしています。</p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-footer">
+        2024 Zenoffice Inc.<br>
+        All rights reserved
+    </div>
+    <script>
+        mermaid.initialize({startOnLoad:true});
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+        // To check the scroll position on page load
+        reveal();
+    </script>
+</body>
+</html>
